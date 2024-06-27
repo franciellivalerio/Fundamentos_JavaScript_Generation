@@ -1,5 +1,6 @@
 const leia = require("readline-sync");
 
+// Função para calcular a soma dos dois primeiros números e comparar com o terceiro número
 
 function calcularSomaEComparar(numeroA, numeroB, numeroC) {
 

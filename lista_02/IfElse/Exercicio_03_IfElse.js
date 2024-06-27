@@ -1,5 +1,6 @@
 const leia = require("readline-sync");
 
+// Função para verificar se o doador pode doar sangue
 
 function possibilidadeDeDoar(nomeDoador, idadeDoador, tipoDeDoacao) {
 

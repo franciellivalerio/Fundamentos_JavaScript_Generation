@@ -3,6 +3,7 @@ const leia = require("readline-sync");
 let continuar;
 let saldoAtual = 1000.00;
 
+// Menu de opções dentro de um laço de repetição
 do {
     console.log("\n Bem-vinde ao Banco Digital MoneySecurity! O que deseja fazer hoje? ");
     
@@ -11,7 +12,8 @@ do {
     console.log("\n [3] - Depositar ");
 
     let codigo = parseInt(leia.question("\n Por favor, digite o numero da opcao desejada: "));
-
+    
+// Switch case para as opções do menu
     switch (codigo) {
         case 1:
             console.log("\n O seu saldo atual e de R$ " + saldoAtual.toFixed(2) + ".");

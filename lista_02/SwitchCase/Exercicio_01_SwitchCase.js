@@ -2,7 +2,7 @@ const leia = require ("readline-sync");
 
 let valorTotal = 0;
 
-
+// Função para calcular o preço final do pedido
 function calcularPrecoDoProduto(codigoDoProduto, quantidadeDoProduto) {
         
         codigoDoProduto = parseInt(codigoDoProduto);
@@ -27,6 +27,8 @@ function calcularPrecoDoProduto(codigoDoProduto, quantidadeDoProduto) {
     
 }
 
+// Apresentação do cardápio
+
 console.log("\n Bem-vinde a lanchonete BomSabor! Aqui esta o nosso cardápio: ");
 console.log(" \n [1] - Cachorro-quente - R$ 10,00 ");
 console.log(" \n [2] - X-Salada - R$ 15,00 ");
@@ -35,6 +37,7 @@ console.log(" \n [4] - Bauru - R$ 12,00 ");
 console.log(" \n [5] - Refrigerante - R$ 8,00 ");
 console.log(" \n [6] - Suco de Laranja - R$ 13,00 ");
 
+// Laço de repetição para fazer novos pedidos
 do {
     let codigoDoProduto = leia.question("\n Por favor, digite o codigo do produto que deseja comprar: ");
     let quantidadeDoProduto = leia.question("\n Por favor, digite a quantidade do produto que deseja comprar: ");
